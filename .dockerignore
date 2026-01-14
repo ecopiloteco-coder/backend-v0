@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Git
+.git/
+.gitignore
+
+# Environment files (will be passed via docker-compose)
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Logs (PM2 logs will be in logs/ directory, mount as volume)
+*.log
+npm-debug.log*
+logs/
+
+# Test files
+**/__tests__/
+**/*.test.js
+jest.config.js
+jest.setup.js
+coverage/
+
+# Build artifacts
+.next/
+dist/
+
+# Documentation
+*.md
+!README.md
+
+# Uploads (mount as volume instead)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
